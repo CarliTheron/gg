@@ -1,0 +1,34 @@
+### Create a new user
+POST http://localhost:8000/api/users 
+Content-Type: application/json
+
+{
+    "name":"Aaron",
+    "surname":"Albany",
+    "age":22,
+    "email":"aaronjalbany@gmail.com"
+}
+
+####
+### Retrieve all users
+GET http://localhost:8000/api/users
+
+####
+### Retrieve a user by ID
+GET http://localhost:8000/api/users/1
+
+####
+### Update a user by ID
+PUT http://localhost:8000/api/users/2
+Content-Type: application/json
+
+{
+    "name":"UpdatedName",
+    "surname":"UpdatedSurname",
+    "age":23,
+    "email":"updatedemail@gmail.com"
+}
+
+####
+### Delete a user by ID
+DELETE http://localhost:8000/api/users/1
